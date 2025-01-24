@@ -1,0 +1,195 @@
+[I 18:11:12.230 NotebookApp] Serving notebooks from local directory: /Users/chenbingyan/Documents/Code/brain.com
+[I 18:11:12.231 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 18:11:12.231 NotebookApp] http://localhost:8888/?token=344b15a28660c97ffea3a9283593beef3bc07b4754fa38cb
+[I 18:11:12.231 NotebookApp]  or http://127.0.0.1:8888/?token=344b15a28660c97ffea3a9283593beef3bc07b4754fa38cb
+[I 18:11:12.231 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:11:12.234 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/chenbingyan/Library/Jupyter/runtime/nbserver-79826-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=344b15a28660c97ffea3a9283593beef3bc07b4754fa38cb
+     or http://127.0.0.1:8888/?token=344b15a28660c97ffea3a9283593beef3bc07b4754fa38cb
+/Users/chenbingyan/apps/miniconda3/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[E 18:11:16.610 NotebookApp] Uncaught exception GET /notebooks/find_in_batch.ipynb (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/notebooks/find_in_batch.ipynb', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/gen.py", line 775, in run
+        yielded = self.gen.send(value)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 95, in get
+        self.write(self.render_template('notebook.html',
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/base/handlers.py", line 516, in render_template
+        return template.render(**ns)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+        self.environment.handle_exception()
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+        raise rewrite_traceback_stack(source=source)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 1, in top-level template code
+        {% extends "page.html" %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/page.html", line 154, in top-level template code
+        {% block header %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 115, in block 'header'
+        {% for exporter in get_frontend_exporters() %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 23, in get_frontend_exporters
+        from nbconvert.exporters.base import get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/__init__.py", line 2, in <module>
+        from .base import ExporterDisabledError, ExporterNameError, export, get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/base.py", line 10, in <module>
+        from importlib_metadata import entry_points  # type:ignore[import-not-found]
+    ModuleNotFoundError: No module named 'importlib_metadata'
+[E 18:11:16.615 NotebookApp] {
+      "Host": "localhost:8888",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Sec-Fetch-Site": "cross-site",
+      "If-None-Match": "\"592d2ec355d0718eb0aedcf39599d53153382de0\"",
+      "Upgrade-Insecure-Requests": "1",
+      "Sec-Fetch-Mode": "navigate",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",
+      "Referer": "http://localhost:8888/tree",
+      "Sec-Fetch-Dest": "document",
+      "Accept-Language": "zh-CN,zh-Hans;q=0.9",
+      "Priority": "u=0, i",
+      "Accept-Encoding": "gzip, deflate",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1736676673|23:username-localhost-8888|44:YTNlNWZjMjk3MzIzNDNiMmJhYjAwNjVkZjRmZDJlZjU=|feacb398288e988d9bb9004e1a3d5b7d0e2c5a4e51dc99db33d271abce613762\"; _xsrf=2|97c7595a|c973262c85281f927564aa781dc66739|1735559954",
+      "Connection": "keep-alive"
+    }
+[E 18:11:16.615 NotebookApp] 500 GET /notebooks/find_in_batch.ipynb (::1) 177.160000ms referer=http://localhost:8888/tree
+[E 18:11:19.969 NotebookApp] Uncaught exception GET /notebooks/Untitled.ipynb (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/notebooks/Untitled.ipynb', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/gen.py", line 775, in run
+        yielded = self.gen.send(value)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 95, in get
+        self.write(self.render_template('notebook.html',
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/base/handlers.py", line 516, in render_template
+        return template.render(**ns)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+        self.environment.handle_exception()
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+        raise rewrite_traceback_stack(source=source)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 1, in top-level template code
+        {% extends "page.html" %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/page.html", line 154, in top-level template code
+        {% block header %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 115, in block 'header'
+        {% for exporter in get_frontend_exporters() %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 23, in get_frontend_exporters
+        from nbconvert.exporters.base import get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/__init__.py", line 2, in <module>
+        from .base import ExporterDisabledError, ExporterNameError, export, get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/base.py", line 10, in <module>
+        from importlib_metadata import entry_points  # type:ignore[import-not-found]
+    ModuleNotFoundError: No module named 'importlib_metadata'
+[E 18:11:19.970 NotebookApp] {
+      "Host": "localhost:8888",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Sec-Fetch-Site": "cross-site",
+      "If-None-Match": "\"592d2ec355d0718eb0aedcf39599d53153382de0\"",
+      "Upgrade-Insecure-Requests": "1",
+      "Sec-Fetch-Mode": "navigate",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",
+      "Referer": "http://localhost:8888/tree",
+      "Sec-Fetch-Dest": "document",
+      "Accept-Language": "zh-CN,zh-Hans;q=0.9",
+      "Priority": "u=0, i",
+      "Accept-Encoding": "gzip, deflate",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1736676673|23:username-localhost-8888|44:YTNlNWZjMjk3MzIzNDNiMmJhYjAwNjVkZjRmZDJlZjU=|feacb398288e988d9bb9004e1a3d5b7d0e2c5a4e51dc99db33d271abce613762\"; _xsrf=2|97c7595a|c973262c85281f927564aa781dc66739|1735559954",
+      "Connection": "keep-alive"
+    }
+[E 18:11:19.970 NotebookApp] 500 GET /notebooks/Untitled.ipynb (::1) 3.220000ms referer=http://localhost:8888/tree
+[W 18:11:19.973 NotebookApp] 404 GET /static/favicons/favicon-notebook.ico (::1) 1.880000ms referer=http://localhost:8888/notebooks/Untitled.ipynb
+/Users/chenbingyan/apps/miniconda3/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[E 18:11:26.635 NotebookApp] Uncaught exception GET /notebooks/find_in_batch.ipynb (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/notebooks/find_in_batch.ipynb', version='HTTP/1.1', remote_ip='::1')
+    Traceback (most recent call last):
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/tornado/gen.py", line 775, in run
+        yielded = self.gen.send(value)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 95, in get
+        self.write(self.render_template('notebook.html',
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/base/handlers.py", line 516, in render_template
+        return template.render(**ns)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+        self.environment.handle_exception()
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+        raise rewrite_traceback_stack(source=source)
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 1, in top-level template code
+        {% extends "page.html" %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/page.html", line 154, in top-level template code
+        {% block header %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/templates/notebook.html", line 115, in block 'header'
+        {% for exporter in get_frontend_exporters() %}
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/notebook/notebook/handlers.py", line 23, in get_frontend_exporters
+        from nbconvert.exporters.base import get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/__init__.py", line 2, in <module>
+        from .base import ExporterDisabledError, ExporterNameError, export, get_export_names, get_exporter
+      File "/Users/chenbingyan/apps/miniconda3/lib/python3.9/site-packages/nbconvert/exporters/base.py", line 10, in <module>
+        from importlib_metadata import entry_points  # type:ignore[import-not-found]
+    ModuleNotFoundError: No module named 'importlib_metadata'
+[E 18:11:26.638 NotebookApp] {
+      "Host": "localhost:8888",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Sec-Fetch-Site": "cross-site",
+      "Upgrade-Insecure-Requests": "1",
+      "Sec-Fetch-Mode": "navigate",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",
+      "Referer": "http://localhost:8888/tree",
+      "Sec-Fetch-Dest": "document",
+      "Accept-Language": "zh-CN,zh-Hans;q=0.9",
+      "Priority": "u=0, i",
+      "Accept-Encoding": "gzip, deflate",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1736676673|23:username-localhost-8888|44:YTNlNWZjMjk3MzIzNDNiMmJhYjAwNjVkZjRmZDJlZjU=|feacb398288e988d9bb9004e1a3d5b7d0e2c5a4e51dc99db33d271abce613762\"; _xsrf=2|97c7595a|c973262c85281f927564aa781dc66739|1735559954",
+      "Connection": "keep-alive"
+    }
+[E 18:11:26.638 NotebookApp] 500 GET /notebooks/find_in_batch.ipynb (::1) 13.730000ms referer=http://localhost:8888/tree
+[C 18:12:53.304 NotebookApp] received signal 15, stopping
+[I 18:12:53.309 NotebookApp] Shutting down 0 kernels
+[I 18:12:53.311 NotebookApp] Shutting down 0 terminals
+[I 2025-01-12 18:13:04.591 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-01-12 18:13:04.593 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-01-12 18:13:04.594 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-01-12 18:13:04.596 ServerApp] notebook | extension was successfully linked.
+[I 2025-01-12 18:13:04.756 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-01-12 18:13:04.777 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-01-12 18:13:04.778 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-01-12 18:13:04.779 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-01-12 18:13:04.780 LabApp] JupyterLab extension loaded from /Users/chenbingyan/apps/miniconda3/envs/brain/lib/python3.12/site-packages/jupyterlab
+[I 2025-01-12 18:13:04.780 LabApp] JupyterLab application directory is /Users/chenbingyan/apps/miniconda3/envs/brain/share/jupyter/lab
+[I 2025-01-12 18:13:04.781 LabApp] Extension Manager is 'pypi'.
+[I 2025-01-12 18:13:04.802 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-01-12 18:13:04.803 ServerApp] notebook | extension was successfully loaded.
+[I 2025-01-12 18:13:04.804 ServerApp] Serving notebooks from local directory: /Users/chenbingyan/Documents/Code/brain.com
+[I 2025-01-12 18:13:04.804 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-01-12 18:13:04.804 ServerApp] http://localhost:8888/tree?token=1b8f835481762667580cae14345e38af1547fe4a3ce4b29c
+[I 2025-01-12 18:13:04.804 ServerApp]     http://127.0.0.1:8888/tree?token=1b8f835481762667580cae14345e38af1547fe4a3ce4b29c
+[I 2025-01-12 18:13:04.804 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-01-12 18:13:04.807 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/chenbingyan/Library/Jupyter/runtime/jpserver-79877-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=1b8f835481762667580cae14345e38af1547fe4a3ce4b29c
+        http://127.0.0.1:8888/tree?token=1b8f835481762667580cae14345e38af1547fe4a3ce4b29c
+[I 2025-01-12 18:13:05.132 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-01-12 18:13:09.971 ServerApp] Kernel started: 129e207c-4582-4271-8e3b-08432d0fd8c8
+[I 2025-01-12 18:13:10.379 ServerApp] Connecting to kernel 129e207c-4582-4271-8e3b-08432d0fd8c8.
+[I 2025-01-12 18:13:10.381 ServerApp] Connecting to kernel 129e207c-4582-4271-8e3b-08432d0fd8c8.
+[I 2025-01-12 18:13:10.381 ServerApp] Connecting to kernel 129e207c-4582-4271-8e3b-08432d0fd8c8.
+[I 2025-01-12 18:13:16.572 ServerApp] Connecting to kernel 129e207c-4582-4271-8e3b-08432d0fd8c8.
+[I 2025-01-23 21:38:39.310 ServerApp] Creating new notebook in 
+[I 2025-01-23 21:38:39.483 ServerApp] Saving file at /Untitled1.ipynb
+[I 2025-01-23 21:38:39.540 ServerApp] Kernel started: 34bef75d-e8cf-469f-8c48-8ce0f71b3864
+[I 2025-01-23 21:38:41.034 ServerApp] Connecting to kernel 34bef75d-e8cf-469f-8c48-8ce0f71b3864.
+[W 2025-01-23 21:38:42.896 ServerApp] 404 GET /apple-touch-icon-precomposed.png (@::1) 22.47ms referer=None
+[W 2025-01-23 21:38:42.902 ServerApp] 404 GET /apple-touch-icon.png (@::1) 0.80ms referer=None
+[I 2025-01-23 21:38:43.106 ServerApp] Connecting to kernel 129e207c-4582-4271-8e3b-08432d0fd8c8.
+[I 2025-01-23 21:38:43.109 ServerApp] Connecting to kernel 34bef75d-e8cf-469f-8c48-8ce0f71b3864.
+[I 2025-01-23 21:38:43.643 ServerApp] Connecting to kernel 34bef75d-e8cf-469f-8c48-8ce0f71b3864.
+[I 2025-01-23 21:40:30.157 ServerApp] Saving file at /class4.ipynb

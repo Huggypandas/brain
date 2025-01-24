@@ -1,0 +1,14 @@
+{
+  "search_space_1": {
+    "search_scope": {
+      "region": "USA",
+      "delay": "1",
+      "universe": "TOP3000",
+      "instrumentType": "EQUITY"
+    },
+    "other_parameters": {
+      "some_key": "some_value",
+      "another_key": 42
+    }
+  }
+}
