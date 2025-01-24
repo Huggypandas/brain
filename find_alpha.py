@@ -23,7 +23,7 @@ SIMULATIONS_URL = 'https://api.worldquantbrain.com/simulations'
 
 # 其他常量
 ALPHA_FAIL_ATTEMPT_TOLERANCE = 15
-DATASET_ID_FUNDAMENTAL6 = 'fundamental6'
+DATASET_ID_FUNDAMENTAL6 = 'fundamental2'
 LIMIT = 50  # 每页请求数量
 
 
